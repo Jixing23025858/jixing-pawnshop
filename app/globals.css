@@ -775,3 +775,163 @@ a {
     padding-bottom: 90px;
   }
 }
+/* =========================
+   福利專區
+========================= */
+
+.welfare {
+  padding: 90px 24px;
+  background: #fff;
+  text-align: center;
+}
+
+.welfare-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welfare .section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.welfare .section-title span {
+  color: #b8860b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.welfare .section-title h2 {
+  margin: 10px 0;
+  color: #123d2d;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.welfare .section-title p {
+  margin: 0;
+  color: #666;
+}
+
+/* 福利專欄 */
+.welfare-card {
+  position: relative;
+  padding: 55px 40px;
+  border: 3px solid #b8860b;
+  background: #fffdf7;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(184, 134, 11, 0.08);
+}
+
+/* 免費提供標籤 */
+.welfare-badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 22px;
+  background: #b8860b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* 標題 */
+.welfare-card h3 {
+  margin: 0 0 22px;
+  color: #123d2d;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* 內容 */
+.welfare-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.welfare-card strong {
+  color: #123d2d;
+  font-weight: 800;
+}
+
+/* 福利標籤 */
+.welfare-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.welfare-tags span {
+  padding: 8px 16px;
+  border: 1px solid #b8860b;
+  color: #8a6508;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 地址電話營業時間 */
+.welfare-info {
+  margin: 30px auto 20px;
+  padding-top: 25px;
+  border-top: 1px solid #dfc77d;
+}
+
+.welfare-info p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.welfare-info a {
+  color: #123d2d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 注意事項 */
+.welfare-card small {
+  display: block;
+  margin-top: 20px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .welfare {
+    padding: 65px 18px;
+  }
+
+  .welfare .section-title h2 {
+    font-size: 30px;
+  }
+
+  .welfare-card {
+    padding: 40px 20px;
+    border-width: 2px;
+  }
+
+  .welfare-card h3 {
+    font-size: 25px;
+  }
+
+  .welfare-card p {
+    font-size: 16px;
+  }
+
+  .welfare-tags {
+    gap: 8px;
+  }
+
+  .welfare-tags span {
+    font-size: 13px;
+  }
+}
