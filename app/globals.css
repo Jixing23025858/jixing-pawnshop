@@ -1025,3 +1025,30 @@ a {
     height: 24px;
   }
 }
+
+
+/* =========================
+   左上角品牌標誌
+========================= */
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+
+  background: #b8860b;
+  border: 2px solid #d4af37;
+
+  color: #fff;
+
+  font-family: "DFKai-SB", "標楷體", "BiauKai", serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+  line-height: 1.2;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
