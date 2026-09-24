@@ -269,30 +269,48 @@ export default function Home() {
       <section className="contact" id="contact">
         <div className="contact-inner">
 
-          <div className="section-title">
-            <span>CONTACT US</span>
+<div className="contact-info">
 
-            <h2>聯絡吉興當鋪</h2>
+  <div className="contact-item">
+    <div className="contact-icon">📍</div>
 
-            <p>
-              歡迎來電或親自到店洽詢
-            </p>
-          </div>
+    <div className="contact-content">
+      <strong>店址</strong>
+      <p>
+        台北市萬華區
+        <br />
+        環河南路二段120號一樓
+      </p>
+    </div>
+  </div>
 
-          <div className="contact-info">
+  <div className="contact-item">
+    <div className="contact-icon">☎</div>
 
-            <div>
-              <strong>📍 地址</strong>
+    <div className="contact-content">
+      <strong>電話</strong>
+      <p>
+        <a href="tel:0223025858">
+          (02) 2302-5858
+        </a>
+      </p>
+    </div>
+  </div>
 
-              <p>
-                台北市萬華區
-                <br />
-                環河南路二段120號一樓
-              </p>
-            </div>
+  <div className="contact-item">
+    <div className="contact-icon">◷</div>
 
-            <div>
-              <strong>📞 電話</strong>
+    <div className="contact-content">
+      <strong>營業時間</strong>
+      <p>
+        週一至週五
+        <br />
+        11:00–19:00
+      </p>
+    </div>
+  </div>
+
+</div>
 
       <div className="floating-contact">
         <a
