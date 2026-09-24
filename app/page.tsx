@@ -31,6 +31,12 @@ const services = [
       "精品估價與借款服務，提供相關精品的價值評估與資金周轉諮詢。",
     icon: "👜",
   },
+  {
+    title: "營業車借款",
+    description:
+      "營業車借款服務，依車況、車輛條件及相關資料進行評估，協助有資金週轉需求的車主。",
+    icon: "🚕",
+  },
 ];
 
 const features = [
@@ -97,7 +103,7 @@ export default function Home() {
           </p>
 
           <p className="hero-services">
-            汽車借款・機車借款・黃金・名錶・精品
+            汽車借款・機車借款・營業車借款・黃金・名錶・精品
           </p>
 
           <a className="call-button" href="tel:0223025858">
@@ -116,7 +122,7 @@ export default function Home() {
           <h2>專業服務</h2>
 
           <p>
-            提供汽車、機車、黃金、名錶及精品等相關服務
+            提供汽車、機車、營業車、黃金、名錶及精品等相關服務
           </p>
         </div>
 
@@ -142,6 +148,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* =========================
+          福利專區
+      ========================= */}
       <section className="welfare">
         <div className="welfare-inner">
           <div className="section-title">
@@ -186,7 +195,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* =========================
           服務特色
       ========================= */}
@@ -266,108 +275,111 @@ export default function Home() {
       {/* =========================
           聯絡我們
       ========================= */}
-<section className="contact" id="contact">
-  <div className="contact-inner">
+      <section className="contact" id="contact">
+        <div className="contact-inner">
 
-    <div className="section-title">
-      <span>CONTACT</span>
-      <h2>聯絡吉興當鋪</h2>
-      <p>歡迎來電或親自到店洽詢</p>
-    </div>
+          <div className="section-title">
+            <span>CONTACT</span>
+            <h2>聯絡吉興當鋪</h2>
+            <p>歡迎來電或親自到店洽詢</p>
+          </div>
 
-    <div className="contact-info">
+          <div className="contact-info">
 
-      <div className="contact-item">
-        <div className="contact-icon">📍</div>
+            <div className="contact-item">
+              <div className="contact-icon">📍</div>
 
-        <div className="contact-content">
-          <strong>店址</strong>
-          <p>
-            台北市萬華區
-            <br />
-            環河南路二段120號一樓
-          </p>
-        </div>
-      </div>
+              <div className="contact-content">
+                <strong>店址</strong>
+                <p>
+                  台北市萬華區
+                  <br />
+                  環河南路二段120號一樓
+                </p>
+              </div>
+            </div>
 
-      <div className="contact-item">
-        <div className="contact-icon">☎</div>
+            <div className="contact-item">
+              <div className="contact-icon">☎</div>
 
-        <div className="contact-content">
-          <strong>電話</strong>
-          <p>
-            <a href="tel:0223025858">
-              (02) 2302-5858
+              <div className="contact-content">
+                <strong>電話</strong>
+                <p>
+                  <a href="tel:0223025858">
+                    (02) 2302-5858
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="contact-item">
+              <div className="contact-icon">◷</div>
+
+              <div className="contact-content">
+                <strong>營業時間</strong>
+                <p>
+                  週一至週五
+                  <br />
+                  11:00–19:00
+                </p>
+                <small>週六、週日休息</small>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="contact-actions">
+
+            <a
+              className="map-button"
+              href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📍 開啟 Google 地圖
             </a>
-          </p>
+
+            <a
+              className="contact-call-button"
+              href="tel:0223025858"
+            >
+              📞 立即致電
+            </a>
+
+          </div>
+
         </div>
+      </section>
+
+      {/* =========================
+          右側懸浮按鈕
+      ========================= */}
+      <div className="floating-contact">
+
+        <a
+          href="tel:0223025858"
+          className="floating-contact-item"
+          aria-label="立即致電吉興當鋪"
+        >
+          <span className="floating-icon">☎</span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61590686666411&locale=zh_TW"
+          className="floating-contact-item"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="前往吉興當鋪 Facebook"
+        >
+          <img
+            src="/facebook.png"
+            alt="吉興當鋪 Facebook"
+            className="floating-facebook-logo"
+          />
+        </a>
+
       </div>
 
-      <div className="contact-item">
-        <div className="contact-icon">◷</div>
-
-        <div className="contact-content">
-          <strong>營業時間</strong>
-          <p>
-            週一至週五
-            <br />
-            11:00–19:00
-          </p>
-          <small>週六、週日休息</small>
-        </div>
-      </div>
-
-    </div>
-
-    <div className="contact-actions">
-
-      <a
-        className="map-button"
-        href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        📍 開啟 Google 地圖
-      </a>
-
-      <a
-        className="contact-call-button"
-        href="tel:0223025858"
-      >
-        📞 立即致電
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-<div className="floating-contact">
-
-  <a
-    href="tel:0223025858"
-    className="floating-contact-item"
-    aria-label="立即致電吉興當鋪"
-  >
-    <span className="floating-icon">☎</span>
-  </a>
-
-  <a
-    href="https://www.facebook.com/profile.php?id=61590686666411&locale=zh_TW"
-    className="floating-contact-item"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="前往吉興當鋪 Facebook"
-  >
-    <img
-      src="/facebook.png"
-      alt="吉興當鋪 Facebook"
-      className="floating-facebook-logo"
-    />
-  </a>
-
-</div>
-      
-</main>
+    </main>
   );
 }
