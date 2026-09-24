@@ -359,8 +359,6 @@ export default function Home() {
               </small>
             </div>
 
-          </div>
-
           <div className="contact-actions">
 
             <a
