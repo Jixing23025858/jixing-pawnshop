@@ -32,7 +32,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico?v=2",
+        type: "image/x-icon",
+      },
+    ],
   },
 };
 
