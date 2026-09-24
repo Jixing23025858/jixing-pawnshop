@@ -1036,11 +1036,9 @@ a {
   align-items: center;
   justify-content: center;
 
-  padding: 8px 18px;
+  padding: 2px 18px;
 
   background: #b8860b;
-  border: 2px solid #d4af37;
-
   color: #fff;
 
   font-family: "DFKai-SB", "標楷體", "BiauKai", serif;
@@ -1048,7 +1046,12 @@ a {
   font-weight: 700;
 
   letter-spacing: 4px;
-  line-height: 1.2;
+  line-height: 1;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  clip-path: polygon(
+    8% 0%,
+    92% 0%,
+    100% 100%,
+    0% 100%
+  );
 }
