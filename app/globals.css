@@ -949,3 +949,87 @@ a {
     height: 21px;
   }
 }
+
+/* =========================
+   右側懸浮聯絡按鈕
+========================= */
+
+.floating-contact {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-contact-item {
+  width: 82px;
+  min-height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: #123d2d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #b8860b;
+  transition: all 0.25s ease;
+}
+
+.floating-contact-item:hover {
+  background: #b8860b;
+  color: #fff;
+}
+
+.floating-icon {
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.floating-facebook-logo {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  display: block;
+}
+
+.floating-contact-item span:last-child {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .floating-contact {
+    top: auto;
+    bottom: 80px;
+    right: 10px;
+    transform: none;
+    gap: 8px;
+  }
+
+  .floating-contact-item {
+    width: 62px;
+    min-height: 62px;
+    border-radius: 50%;
+    border-width: 2px;
+  }
+
+  .floating-icon {
+    font-size: 20px;
+  }
+
+  .floating-facebook-logo {
+    width: 21px;
+    height: 21px;
+  }
+
+  .floating-contact-item span:last-child {
+    font-size: 10px;
+  }
+}
