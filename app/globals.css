@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #173c2d;
+  font-family:
+    Arial,
+    "Noto Sans TC",
+    "Microsoft JhengHei",
+    sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+/* 頂部綠色區 */
+.header {
+  width: 100%;
+  height: 70px;
+  background: #123d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* 首頁主視覺 */
+.hero {
+  min-height: calc(100vh - 70px);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px 60px;
+}
+
+.hero-logo {
+  position: relative;
+  width: min(90vw, 1000px);
+  height: min(65vh, 700px);
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 800;
+  color: #123d2d;
+}
+
+.hero-content p {
+  margin: 10px 0;
+  font-size: clamp(17px, 2vw, 24px);
+  color: #555555;
+}
+
+.hero-content p:last-child {
+  color: #b8860b;
+  font-weight: 700;
+}
+
+/* 聯絡資訊 */
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f8f5;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #123d2d;
+}
+
+.contact p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+  .hero {
+    min-height: calc(100svh - 60px);
+    padding: 20px 15px 40px;
+  }
+
+  .hero-logo {
+    width: 94vw;
+    height: 55vh;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .contact {
+    padding: 60px 20px;
+  }
+}
