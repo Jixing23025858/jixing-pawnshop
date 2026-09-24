@@ -931,7 +931,21 @@ a {
     gap: 8px;
   }
 
+  .floating-facebook-logo {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  display: block;
+}
+
   .welfare-tags span {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-facebook-logo {
+    width: 21px;
+    height: 21px;
   }
 }
