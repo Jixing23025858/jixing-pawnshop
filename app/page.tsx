@@ -307,102 +307,30 @@ export default function Home() {
         <br />
         11:00–19:00
       </p>
+      <small>週六、週日休息</small>
     </div>
   </div>
 
 </div>
 
-      <div className="floating-contact">
-        <a
-          href="tel:0223025858"
-          className="floating-contact-item"
-          aria-label="立即致電吉興當鋪"
-        >
-          <span className="floating-icon">📞</span>
-          <span>立即來電</span>
-        </a>
+<div className="contact-actions">
 
-        <a
-          href="https://www.facebook.com/profile.php?id=61590686666411&locale=zh_TW"
-          className="floating-contact-item"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="前往吉興當鋪 Facebook"
-        >
-          <img
-            src="/facebook.png"
-            alt="吉興當鋪 Facebook"
-            className="floating-facebook-logo"
-          />
-          <span>Facebook</span>
-        </a>
-      </div>
-              
-              <p>
-                <a href="tel:0223025858">
-                  (02) 2302-5858
-                </a>
-              </p>
-            </div>
+  <a
+    className="map-button"
+    href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    📍 開啟 Google 地圖
+  </a>
 
-            <div>
-              <strong>🕐 營業時間</strong>
+  <a
+    className="contact-call-button"
+    href="tel:0223025858"
+  >
+    📞 立即致電
+  </a>
 
-              <p>
-                週一至週五
-                <br />
-                11:00–19:00
-              </p>
+</div>
 
-              <small>
-                週六、週日休息
-              </small>
-            </div>
-
-          <div className="contact-actions">
-
-            <a
-              className="map-button"
-              href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📍 開啟 Google 地圖
-            </a>
-
-            <a
-              className="contact-call-button"
-              href="tel:0223025858"
-            >
-              📞 立即致電
-            </a>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* =========================
-          Footer
-      ========================= */}
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} 吉興當鋪</p>
-
-        <p>
-          台北市萬華區｜汽車借款｜機車借款｜黃金｜名錶｜精品
-        </p>
-      </footer>
-
-      {/* =========================
-          Mobile 固定撥號
-      ========================= */}
-      <a
-        href="tel:0223025858"
-        className="mobile-call"
-      >
-        📞 立即來電
-      </a>
-
-    </main>
-  );
-}
+</section>
