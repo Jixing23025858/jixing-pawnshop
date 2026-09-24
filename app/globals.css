@@ -1139,3 +1139,70 @@ a {
     padding: 20px;
   }
 }
+
+.floating-contact {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-contact-item {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #123d2d;
+  border: 2px solid #b8860b;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: all 0.25s ease;
+}
+
+.floating-contact-item:hover {
+  background: #b8860b;
+  transform: scale(1.08);
+}
+
+.floating-icon {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.floating-facebook-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .floating-contact {
+    right: 12px;
+    bottom: 85px;
+    top: auto;
+    transform: none;
+    gap: 10px;
+  }
+
+  .floating-contact-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .floating-icon {
+    font-size: 20px;
+  }
+
+  .floating-facebook-logo {
+    width: 24px;
+    height: 24px;
+  }
+}
