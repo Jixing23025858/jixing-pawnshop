@@ -78,50 +78,6 @@ export default function Home() {
       ========================= */}
       <section className="hero">
 
-      <section className="welfare">
-        <div className="welfare-inner">
-          <div className="section-title">
-            <span>WELFARE</span>
-            <h2>福利專區</h2>
-            <p>吉興當鋪關心在地外送夥伴</p>
-          </div>
-
-          <div className="welfare-card">
-            <div className="welfare-badge">免費提供</div>
-
-            <h3>外送夥伴免費專用袋</h3>
-
-            <p>
-              為感謝辛苦奔波的外送夥伴，
-              <br />
-              吉興當鋪提供 <strong>Uber Eats、foodpanda</strong> 外送員專用袋免費領取。
-            </p>
-
-            <p>
-              不論您平常使用哪個平台接單，
-              <br />
-              只要有外送袋需求，都歡迎親自到店免費領取。
-            </p>
-
-            <div className="welfare-tags">
-              <span>免費提供</span>
-              <span>Uber Eats 外送夥伴</span>
-              <span>foodpanda 外送夥伴</span>
-              <span>歡迎到店領取</span>
-            </div>
-
-            <div className="welfare-info">
-              <p>📍 台北市萬華區環河南路二段120號一樓</p>
-              <p>📞 <a href="tel:0223025858">(02) 2302-5858</a></p>
-              <p>🕐 週一至週五 11:00–19:00</p>
-            </div>
-
-            <small>
-              外送袋數量有限，送完為止；實際供應情況歡迎來店或先來電洽詢。
-            </small>
-          </div>
-        </div>
-      </section>        
         <div className="hero-logo">
           <Image
             src="/logo.png"
@@ -186,6 +142,51 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="welfare">
+        <div className="welfare-inner">
+          <div className="section-title">
+            <span>WELFARE</span>
+            <h2>福利專區</h2>
+            <p>吉興當鋪關心在地外送夥伴</p>
+          </div>
+
+          <div className="welfare-card">
+            <div className="welfare-badge">免費提供</div>
+
+            <h3>外送夥伴免費專用袋</h3>
+
+            <p>
+              為感謝辛苦奔波的外送夥伴，
+              <br />
+              吉興當鋪提供 <strong>Uber Eats、foodpanda</strong> 外送員專用袋免費領取。
+            </p>
+
+            <p>
+              不論您平常使用哪個平台接單，
+              <br />
+              只要有外送袋需求，都歡迎親自到店免費領取。
+            </p>
+
+            <div className="welfare-tags">
+              <span>免費提供</span>
+              <span>Uber Eats 外送夥伴</span>
+              <span>foodpanda 外送夥伴</span>
+              <span>歡迎到店領取</span>
+            </div>
+
+            <div className="welfare-info">
+              <p>📍 台北市萬華區環河南路二段120號一樓</p>
+              <p>📞 <a href="tel:0223025858">(02) 2302-5858</a></p>
+              <p>🕐 週一至週五 11:00–19:00</p>
+            </div>
+
+            <small>
+              外送袋數量有限，送完為止；實際供應情況歡迎來店或先來電洽詢。
+            </small>
+          </div>
+        </div>
+      </section>
+      
       {/* =========================
           服務特色
       ========================= */}
