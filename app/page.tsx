@@ -266,71 +266,78 @@ export default function Home() {
       {/* =========================
           聯絡我們
       ========================= */}
-      <section className="contact" id="contact">
-        <div className="contact-inner">
+<section className="contact" id="contact">
+  <div className="contact-inner">
 
-<div className="contact-info">
-
-  <div className="contact-item">
-    <div className="contact-icon">📍</div>
-
-    <div className="contact-content">
-      <strong>店址</strong>
-      <p>
-        台北市萬華區
-        <br />
-        環河南路二段120號一樓
-      </p>
+    <div className="section-title">
+      <span>CONTACT</span>
+      <h2>聯絡吉興當鋪</h2>
+      <p>歡迎來電或親自到店洽詢</p>
     </div>
-  </div>
 
-  <div className="contact-item">
-    <div className="contact-icon">☎</div>
+    <div className="contact-info">
 
-    <div className="contact-content">
-      <strong>電話</strong>
-      <p>
-        <a href="tel:0223025858">
-          (02) 2302-5858
-        </a>
-      </p>
+      <div className="contact-item">
+        <div className="contact-icon">📍</div>
+
+        <div className="contact-content">
+          <strong>店址</strong>
+          <p>
+            台北市萬華區
+            <br />
+            環河南路二段120號一樓
+          </p>
+        </div>
+      </div>
+
+      <div className="contact-item">
+        <div className="contact-icon">☎</div>
+
+        <div className="contact-content">
+          <strong>電話</strong>
+          <p>
+            <a href="tel:0223025858">
+              (02) 2302-5858
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div className="contact-item">
+        <div className="contact-icon">◷</div>
+
+        <div className="contact-content">
+          <strong>營業時間</strong>
+          <p>
+            週一至週五
+            <br />
+            11:00–19:00
+          </p>
+          <small>週六、週日休息</small>
+        </div>
+      </div>
+
     </div>
-  </div>
 
-  <div className="contact-item">
-    <div className="contact-icon">◷</div>
+    <div className="contact-actions">
 
-    <div className="contact-content">
-      <strong>營業時間</strong>
-      <p>
-        週一至週五
-        <br />
-        11:00–19:00
-      </p>
-      <small>週六、週日休息</small>
+      <a
+        className="map-button"
+        href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📍 開啟 Google 地圖
+      </a>
+
+      <a
+        className="contact-call-button"
+        href="tel:0223025858"
+      >
+        📞 立即致電
+      </a>
+
     </div>
+
   </div>
-
-</div>
-
-<div className="contact-actions">
-
-  <a
-    className="map-button"
-    href="https://www.google.com/maps/search/?api=1&query=台北市萬華區環河南路二段120號"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    📍 開啟 Google 地圖
-  </a>
-
-  <a
-    className="contact-call-button"
-    href="tel:0223025858"
-  >
-    📞 立即致電
-  </a>
-
-</div>
-
 </section>
