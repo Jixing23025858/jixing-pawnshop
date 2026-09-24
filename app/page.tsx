@@ -349,7 +349,7 @@ export default function Home() {
     className="floating-contact-item"
     aria-label="立即致電吉興當鋪"
   >
-    <span className="floating-icon">📞</span>
+    <span className="floating-icon">☎</span>
   </a>
 
   <a
