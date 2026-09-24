@@ -294,6 +294,32 @@ export default function Home() {
             <div>
               <strong>📞 電話</strong>
 
+      <div className="floating-contact">
+        <a
+          href="tel:0223025858"
+          className="floating-contact-item"
+          aria-label="立即致電吉興當鋪"
+        >
+          <span className="floating-icon">📞</span>
+          <span>立即來電</span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61590686666411&locale=zh_TW"
+          className="floating-contact-item"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="前往吉興當鋪 Facebook"
+        >
+          <img
+            src="/facebook.png"
+            alt="吉興當鋪 Facebook"
+            className="floating-facebook-logo"
+          />
+          <span>Facebook</span>
+        </a>
+      </div>
+              
               <p>
                 <a href="tel:0223025858">
                   (02) 2302-5858
@@ -363,4 +389,77 @@ export default function Home() {
 
     </main>
   );
+}
+
+/* =========================
+   右側懸浮聯絡按鈕
+========================= */
+
+.floating-contact {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-contact-item {
+  width: 82px;
+  min-height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: #123d2d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #b8860b;
+  transition: all 0.25s ease;
+}
+
+.floating-contact-item:hover {
+  background: #b8860b;
+  color: #fff;
+}
+
+.floating-icon {
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.floating-contact-item span:last-child {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .floating-contact {
+    top: auto;
+    bottom: 80px;
+    right: 10px;
+    transform: none;
+    gap: 8px;
+  }
+
+  .floating-contact-item {
+    width: 62px;
+    min-height: 62px;
+    border-radius: 50%;
+    border-width: 2px;
+  }
+
+  .floating-icon {
+    font-size: 20px;
+  }
+
+  .floating-contact-item span:last-child {
+    font-size: 10px;
+  }
 }
