@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         <div className="hero-content">
-          <h1>吉興當鋪｜吉興大俠的家</h1>
+          <h1>吉興當鋪｜吉興大俠の家</h1>
 
           <p className="hero-subtitle">
             親民的吉興大俠不管上山下海都在您身邊
