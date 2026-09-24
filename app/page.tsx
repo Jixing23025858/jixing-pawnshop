@@ -342,6 +342,32 @@ export default function Home() {
   </div>
 </section>
 
+<div className="floating-contact">
+
+  <a
+    href="tel:0223025858"
+    className="floating-contact-item"
+    aria-label="立即致電吉興當鋪"
+  >
+    <span className="floating-icon">📞</span>
+  </a>
+
+  <a
+    href="https://www.facebook.com/profile.php?id=61590686666411&locale=zh_TW"
+    className="floating-contact-item"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="前往吉興當鋪 Facebook"
+  >
+    <img
+      src="/facebook.png"
+      alt="吉興當鋪 Facebook"
+      className="floating-facebook-logo"
+    />
+  </a>
+
+</div>
+      
 </main>
   );
 }
