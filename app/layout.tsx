@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  
+  verification: {
+    google: "r3UkYxqJFxkSa06WN4zwXTLcAlbkDYRUwVZ0eMnu-8Q",
+  },
+  
   icons: {
     icon: [
       {
